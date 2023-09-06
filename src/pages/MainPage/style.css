@@ -1,0 +1,68 @@
+
+#main .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 3rem;
+    padding: 0.5rem 1rem;
+    background-color: #000000da;
+    color: #fdfdfd;
+    border-radius: 5px;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+#main .nav .logo {
+    flex: 1;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+#main .nav .search input{
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    margin: 0 1rem;
+    background-color: #f1f1f1c9;
+    color: #000;
+    font-size: 1rem;
+    font-style: oblique;
+}
+
+#main .nav .search button{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fdfdfd;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 0 0.5rem;
+    
+}
+
+#main .nav .search button:hover{
+    background-color: #0069d9;
+    transform: translateY(-5px);
+}
+
+
+
+
+
+#main .logout button{
+    background-color: #ff0000;
+    color: #fdfdfd;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#main .logout button:hover{
+    background-color: #ff0000c4;
+    transform: translateY(-5px);
+}
+
