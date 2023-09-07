@@ -1,13 +1,22 @@
-import React, {useState} from "react";
+import React, {useContext, useState} from "react";
+import { Link } from "react-router-dom";
+import { AuthContext } from "../../contexts/auth";
 import "./style.css";
 
 const LoginPage = () => {
+
+    const { login } = useContext(AuthContext);
+    
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
 
-    const handleLogin = () => { 
-        console.log("Email: ", email);
+    const handleLogin = async () => {
+        try {
+            await login(email, password);
+        } catch (error) {
+            console.log(error);
+        }    
     };
 
 
@@ -40,7 +49,7 @@ const LoginPage = () => {
             </div>
             <div className="action">
                 <button onClick={handleLogin}>Entrar</button>
-                <button>Registrar</button>
+                <button><Link to='/register'>Registrar</Link></button>
             </div>
             </div>
         </div>

@@ -1,3 +1,9 @@
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
 #main .nav {
     display: flex;
@@ -66,3 +72,99 @@
     transform: translateY(-5px);
 }
 
+#main .repositories {
+
+    background-color: #00000041;
+    max-width: 70%;
+    margin: 8rem auto;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+#main .repositories .title{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+#main .repositories .list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+#main .repositories .item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border: 1px solid #0000001a;
+    background-color: #fdfdfd;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+#main .repositories .item .info{
+    flex: 1;
+}
+
+#main .repositories .item .info .name{
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+#main .repositories .item button{
+    background-color: #ff0000ab;
+    color: #fdfdfd;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#main .repositories button:hover{
+    background-color: #ff0000;
+    transform: translateY(-5px);
+}
+
+#main .repositories .new {
+    background-color: none;
+    max-width: 480px;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 8rem;
+    border-radius: 5px;
+}
+
+#main .repositories .new input{
+    flex: 2;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    padding: 0.3rem;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid #0000001a;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#main .repositories .new button{
+    background-color: #007bff;
+    color: #fdfdfd;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#main .repositories .new button:hover{
+    background-color: #0069d9;
+    transform: translateY(-5px);
+}

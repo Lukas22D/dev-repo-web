@@ -4,10 +4,12 @@ import './App.css';
 import AppRoute from './AppRoutes';
 
 function App() {
+
   return (
-    <div className="App">
-      <AppRoute/>
-    </div>
+     
+        <AppRoute/>
+      
+
   );
 }
 

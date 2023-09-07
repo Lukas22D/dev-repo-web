@@ -44,6 +44,15 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
+#login .action  a:Link{
+    text-decoration: none;
+    color: #fff;
+}
+#login .action  a:visited{
+    text-decoration: none;
+    color: #fff;
+}
+
 
 #login .action button:hover {
     background-color: #0069d9;
