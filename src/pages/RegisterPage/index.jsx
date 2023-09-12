@@ -1,17 +1,24 @@
 import React, {useState, useContext,} from "react";
 import { AuthContext } from "../../contexts/auth";
 import "./style.css";
+import { useNavigate } from "react-router-dom";
 
 const RegistrePage = () => {
+    const navigate = useNavigate();
+
+
 
     const {register} = useContext(AuthContext);
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    const handleRegister = async () => {
+    const handleRegister = async (event) => {
+
+        event.preventDefault();
         try{
            await register(email, password);
             console.group("Usuário criado com sucesso!");
+                        
             
         } catch(error){
             console.log(error);
@@ -33,7 +40,7 @@ const RegistrePage = () => {
                     <input type="password" name="password" id="password" value={password} onChange={(e)=> setPassword(e.target.value)} />
                 </div>
                 <div className="actions">
-                    <button type="submit" onClick={handleRegister}>Registrar</button>
+                    <button type="submit" onClick={(event) => handleRegister(event)}>Registrar</button>
                 </div>
             </form>
         </div>
